@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+.clearfix {
+  *zoom: 1;
+}
+.App {
+  box-sizing: border-box;
+  width: 100%;
+  /* padding: 2vmin 1vmin 2vmin 2vmin; */
+  padding: 1rem .5rem 1rem 1rem;
+  background-color: rgb(218, 107, 55);
+  /* text-align: center; */
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.goods-item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+
+.goods-title {
+  font-size: 1.6rem;
+}
+
+.goods-content {
+  margin-top: 2rem;
+}
+
+.goods-content .card,
+.goods-item .goods-content .welfare {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: #333;
+}
+
+.cardImg {
+  flex: 2;
+  width: 100px;
+  height: 100px;
+  /* min-width: 50px;
+  max-width: 100px;
+  max-height: 100px; */
+}
+
+.card img,
+.welfare img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
+.goods-content .indroduce {
+  flex: 4;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.indroduce li {
+  flex: 1;
+  width: 100%;
+  /* overflow: hidden;
+  text-overflow: ellipsis;   */
+  /* display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; */
+  /* white-space: nowrap; */
+  line-height: 1.5em;
+}
+
+.indroduce li:first-of-type {
+  /* vertical-align: sub; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.indroduce li:last-of-type {
+  /* vertical-align: bottom; */
+  display: flex;
+  align-items: flex-end;
+}
+
+.indroduce li:last-of-type,
+.indroduce .price {
+  color: #ccc;
+}
+
+.goods-content .welfare {
+  display: block;
+  margin-top: 2rem;
+}
+
+.indroduce .intergation {
+  color: coral;
+}
+
+@media screen and (min-width:600px) {
+  .cardImg {
+    max-width: 130px;
+    max-height: 130px;
+  }
+  .goods-content .indroduce {
+    max-width: 260px;
+    font-size: 1.5rem;
+  }
+}
+
+.more {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  color: #fff;
+  text-align: center;
+}
